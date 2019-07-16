@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  touch-action: none;
+  margin: 0px;
+  color: #151623;
+}
+html {
+  padding: 0px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

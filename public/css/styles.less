@@ -1,0 +1,35 @@
+// COLORS
+@white: #FFFFFF;
+@offwhite: #F7F7F7;
+@gray: #CCCCCC;
+@black: #151623;
+@orange: #E05A47;
+@green: #7A8E5A;
+
+// MEDIA QUERIES
+@desktop: ~"only screen and (min-width: 720px)";
+@phonePlus: ~"only screen and (min-width: 375px) and (max-width: 667px)";
+
+// IMPORT OTHER STYLES
+// @import "./_header.less";
+// @import "./_buttons.less";
+// @import "./_footer.less";
+
+// RESET
+* {
+    box-sizing: border-box;
+    touch-action: none;
+    margin: 0px;
+    color: @black;
+  }
+  
+  html {
+    padding: 0px;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
