@@ -1,3 +1,140 @@
+header {
+  background-image: url(/public/img/flexxwavehero-mobile.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+@media only screen and (min-width: 720px) {
+  header {
+    background-image: url(/public/img/flexxwavehero-desktop.png);
+  }
+}
+header img {
+  width: 100%;
+}
+@media only screen and (min-width: 720px) {
+  header img {
+    width: 30%;
+  }
+}
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+}
+#product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  min-height: 50vh;
+  width: 100%;
+}
+#product h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin: 20px;
+  color: #FE8901;
+}
+#product li {
+  font-family: "Montserrat", sans-serif;
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  min-height: 50vh;
+  width: 100%;
+  background-color: #c4e0e4;
+}
+#about p {
+  color: #294458;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  font-size: large;
+}
+#about h2 {
+  color: #294458;
+  font-family: "Montserrat", sans-serif;
+}
+#winning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 20px;
+  background: #294458;
+  width: 100%;
+}
+#winning h2 {
+  font-family: "Montserrat", snas-serif;
+  font-weight: bold;
+  margin: 20px 0px;
+  color: #FE8901;
+}
+#winning li,
+#winning p,
+#winning strong {
+  font-family: "Montserrat", snas-serif;
+  font-size: large;
+  color: #FFFFFF;
+}
+#winning ul {
+  margin: 20px 0px;
+}
+#prizes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 20px;
+  background: #294458;
+  width: 100%;
+}
+#prizes h1 {
+  font-family: "Montserrat", snas-serif;
+  font-weight: bold;
+  margin: 20px 0px;
+  color: #FE8901;
+}
+#prizes h2 {
+  font-family: "Montserrat", snas-serif;
+  font-weight: bold;
+  margin: 20px 0px;
+  color: #FFFFFF;
+}
+#prizes li,
+#prizes p {
+  font-family: "Montserrat", snas-serif;
+  font-size: large;
+  color: #FFFFFF;
+}
+#prizes ul {
+  margin: 20px 0px;
+}
+footer {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background: #151623;
+}
+footer a {
+  color: #c4e0e4;
+  font-family: "Montserrat", sans-serif;
+}
 * {
   box-sizing: border-box;
   touch-action: none;
@@ -11,4 +148,48 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+#terms,
+#privacy,
+#returns {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #c4e0e4;
+}
+#terms h1,
+#privacy h1,
+#returns h1 {
+  color: #294458;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#terms h2,
+#privacy h2,
+#returns h2 {
+  color: #294458;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#terms p,
+#privacy p,
+#returns p,
+#terms a,
+#privacy a,
+#returns a,
+#terms .back,
+#privacy .back,
+#returns .back {
+  color: #294458;
+  font-family: Montserrat, sans-serif;
+  font-size: large;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+#terms .back,
+#privacy .back,
+#returns .back {
+  align-self: flex-end;
 }

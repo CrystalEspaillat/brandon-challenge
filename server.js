@@ -18,6 +18,12 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/pages/index.html'));
 });
+app.get('/privacy', (req, res) => {
+    res.sendFile(path.join(__dirname + '/public/pages/privacy.html'));
+});
+app.get('/terms', (req, res) => {
+    res.sendFile(path.join(__dirname + '/public/pages/terms.html'));
+});
 
 // LISTEN
 app.listen(process.env.PORT || 5000, () => console.log('Server started...'));

@@ -3,18 +3,22 @@
 @offwhite: #F7F7F7;
 @gray: #CCCCCC;
 @black: #151623;
-@orange: #E05A47;
-@green: #7A8E5A;
+@blue: #294458;
+@lightblue: #c4e0e4;
+@orange: #FE8901;
 
 // MEDIA QUERIES
 @desktop: ~"only screen and (min-width: 720px)";
 @phonePlus: ~"only screen and (min-width: 375px) and (max-width: 667px)";
 
 // IMPORT OTHER STYLES
-// @import "./_header.less";
-// @import "./_buttons.less";
-// @import "./_footer.less";
-
+@import "./_header.less";
+@import "./_product.less";
+@import "./_about.less";
+@import "./_winning.less";
+@import "./_prizes.less";
+@import "./_footer.less";
+ 
 // RESET
 * {
     box-sizing: border-box;
@@ -33,3 +37,39 @@
     min-height: 100vh;
   }
 
+  #terms, #privacy, #returns {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: @lightblue;
+
+    h1 {
+      color: @blue;
+      font-family: Montserrat, sans-serif;
+      font-weight: bold;
+      margin-bottom: 20px;
+
+    }
+
+    h2 {
+      color: @blue;
+      font-family: Montserrat, sans-serif;
+      font-weight: bold;
+      margin-bottom: 20px;
+
+    }
+
+    p, a, .back {
+      color: @blue;
+      font-family: Montserrat, sans-serif;
+      font-size: large;
+      margin-bottom: 20px;
+      text-decoration: none;
+
+    }
+
+    .back {
+      align-self: flex-end;
+    }
+
+  }
